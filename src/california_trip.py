@@ -42,20 +42,30 @@ roteiro_data = {
             ("⚓", "**USS Midway Museum**",
              "Explore o gigantesco porta-aviões. Excelente para os 9 e 12 anos, com acesso a aviões e ponte de comando."),
             ("🏖️", "**Coronado Beach**",
-             "Visite a praia e o histórico Hotel del Coronado. Ótimo para um passeio relaxante e fotos.")
+             "Visite a praia e o histórico Hotel del Coronado. Ótimo para um passeio relaxante e fotos."),
+            ("🏛️", "**Maritime Museum**", "Um museu marítimo com vários navios históricos e um submarino."),
+            ("🤠", "**Old Town San Diego State Historic Park**", "Explore a história da cidade, com apresentações, mercados e arquitetura antiga."),
+            ("💡", "**Gaslamp Quarter**", "Um bairro histórico com vida noturna animada, restaurantes e bares."),
+            ("🎢", "**Belmont Park**", "Um parque de diversões histórico na praia Mission Beach com atrações como montanha-russa de madeira e simuladores de surf."),
+            ("🧱", "**Legoland California**", "Um parque temático focado em blocos de montar, ótimo para crianças e para quem gosta de parques de diversões."),
+            ("🐠", "**Birch Aquarium at Scripps**", "Um aquário com um túnel de observação subaquática onde se pode ver tubarões e raias nadando acima e ao redor."),
+            ("🛍️", "**Compras no Outlet**", "Visite o outlet de San Diego para fazer compras em lojas com marcas famosas.")
         ]
     },
     f"🌁 San Francisco & Bay Area ({DIAS_SF} Dias)": {
         "icon": "🌁",
         "dias": get_dates(SF_START, DIAS_SF),
         "destaques": [
-            ("🔑", "**Alcatraz Island**",
-             "O tour de áudio é excelente para todas as idades. **Reserve com 3-4 meses de antecedência!**"),
-            ("🧪", "**Exploratorium**",
-             "Museu de ciências altamente interativo no Pier 15. Absolutamente envolvente para 9 e 12 anos."),
-            ("🚡", "**Cable Car, Golden Gate & Pier 39**",
-             "Passeio de bonde, bike na Golden Gate e os leões marinhos do Pier 39 (Fisherman's Wharf)."),
-            ("🌲", "**Muir Woods Redwoods**", "Dirija até lá para ver as majestosas Sequoias (Redwoods).")
+            ("🌉", "**Ponte Golden Gate**", "Atravesse a pé, de bicicleta ou de carro para vistas incríveis. Um ícone da cidade."),
+            ("🔑", "**Ilha de Alcatraz**", "Faça um passeio de balsa para a antiga prisão. O tour de áudio é excelente. **Compre ingressos com 3-4 meses de antecedência!**"),
+            ("🦁", "**Fisherman's Wharf & Pier 39**", "Veja os leões-marinhos, visite o curioso e gratuito Musée Mécanique (Pier 45) e experimente os pães da Boudin Bakery."),
+            ("🚡", "**Passeio de Teleférico (Cable Car)**", "Uma forma clássica e divertida de se locomover e conhecer a cidade. Visite o Cable Car Museum para saber mais."),
+            ("🔬", "**California Academy of Sciences**", "Um museu incrível com planetário, aquário, floresta tropical e um telhado verde."),
+            ("🐠", "**Aquarium of the Bay**", "Localizado no Pier 39, é uma ótima opção para quem gosta de vida marinha."),
+            ("🚶", "**Explore os Bairros**", "Caminhe por áreas icônicas como Chinatown, Little Italy e faça um free walking tour para conhecer a história local."),
+            ("🌲", "**Muir Woods & Sausalito**", "Faça uma excursão para ver as sequoias gigantes e a charmosa cidade costeira de Sausalito."),
+            ("🍷", "**Napa Valley**", "Se houver tempo, faça uma viagem de um dia para a famosa região vinícola para degustação de vinhos."),
+            ("🎉", "**Festivais e Eventos**", "Verifique a programação da cidade. San Francisco sempre tem festivais e eventos ao ar livre acontecendo.")
         ]
     },
     f"🛣️ Highway 1 (2 Dias)": {
@@ -72,13 +82,17 @@ roteiro_data = {
         "icon": "🎬",
         "dias": get_dates(ANAHEIM_START, DIAS_ANAHEIM_LA),
         "destaques": [
-            ("✨", "**Disneyland & California Adventure**",
-             "Foco principal. Priorize Star Wars: Galaxy's Edge e Avengers Campus."),
-            ("🧙", "**Universal Studios Hollywood**",
-             "Prioridade: **Super Nintendo World** e **Harry Potter**, além do famoso Studio Tour."),
-            ("🔭", "**Griffith Observatory**", "Vistas de L.A. e do Letreiro de Hollywood. Ótima parada noturna."),
-            ("🎢", "**Santa Monica Pier**", "Píer icônico com roda gigante, jogos e o parque de diversões à beira-mar."),
-            ("⭐", "**Hollywood Blvd**", "Calçada da Fama e TCL Chinese Theatre (rápido, mas obrigatório).")
+            ("✨", "**Disneyland & California Adventure**", "O resort inclui os dois parques. Foco principal: Star Wars: Galaxy's Edge e Avengers Campus."),
+            ("🧙", "**Universal Studios Hollywood**", "Prioridade: **Super Nintendo World** e **Harry Potter**, além do famoso Studio Tour."),
+            ("🍓", "**Knott's Berry Farm**", "Considerado o primeiro parque temático dos EUA, com montanhas-russas emocionantes e atrações clássicas."),
+            ("🎢", "**Six Flags Magic Mountain**", "Para os amantes de adrenalina, é o parque com o maior número de montanhas-russas do mundo."),
+            ("🛍️", "**Downtown Disney**", "Área de compras, restaurantes e entretenimento anexa à Disney, com lojas como World of Disney."),
+            ("🎡", "**Santa Monica Pier**", "Píer icônico com roda gigante, jogos e o parque de diversões à beira-mar."),
+            ("🏖️", "**Praia de Balboa**", "A uma curta distância de Anaheim, possui um píer charmoso e atraente."),
+            ("🔭", "**Griffith Observatory**", "Vistas incríveis de L.A. e do Letreiro de Hollywood. Ótima parada, especialmente ao entardecer."),
+            ("⭐", "**Hollywood Blvd**", "Calçada da Fama e TCL Chinese Theatre (passeio rápido, mas obrigatório)."),
+            ("🐠", "**Aquarium of the Pacific**", "Um grande aquário localizado em Long Beach, com foco na vida marinha do Pacífico."),
+            ("⚓", "**Battleship USS Iowa Museum**", "Explore um navio de guerra histórico que serviu os EUA por décadas.")
         ]
     }
 }
