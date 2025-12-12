@@ -66,7 +66,7 @@ def get_weather_forecast(city_name):
 
 # --- Dados do Roteiro ---
 roteiro_data = {
-    f"☀️ San Diego ({DIAS_SD} Dias)": {
+    f"☀️ San Diego": {
         "icon": "☀️",
         "dias": get_dates(SD_START, DIAS_SD),
         "cidade_api": "San Diego",
@@ -84,7 +84,7 @@ roteiro_data = {
             ("🛍️", "**Compras no Outlet**", "Visite o outlet para compras de marcas famosas.")
         ]
     },
-    f"🌁 San Francisco ({DIAS_SF} Dias)": {
+    f"🌁 San Francisco": {
         "icon": "🌁",
         "dias": get_dates(SF_START, DIAS_SF),
         "cidade_api": "San Francisco",
@@ -98,7 +98,7 @@ roteiro_data = {
             ("🌲", "**Muir Woods & Sausalito**", "Excursão para ver as sequoias gigantes."),
         ]
     },
-    f"🛣️ Highway 1 (2 Dias)": {
+    f"🛣️ Highway 1": {
         "icon": "🛣️",
         "dias": get_dates(HW1_START, DIAS_VIAGEM),
         "cidade_api": "Monterey",
@@ -109,7 +109,7 @@ roteiro_data = {
             ("🏡", "**Carmel-by-the-Sea**", "Cidade charmosa para um almoço ou café.")
         ]
     },
-    f"🎡 Anaheim, L.A. e Parques ({DIAS_ANAHEIM_LA} Dias)": {
+    f"🎡 Anaheim": {
         "icon": "🎬",
         "dias": get_dates(ANAHEIM_START, DIAS_ANAHEIM_LA),
         "cidade_api": "Anaheim",
@@ -130,8 +130,8 @@ roteiro_data = {
 
 # --- Função Principal para Renderização ---
 def main():
-    st.title("🗺️ Férias Califórnia")
-    st.markdown("### 🗓️ 25 Dezembro a 17 Janeiro - 24 Dias")
+    st.title("🗺️ Califórnia")
+    st.markdown("### 🗓️ 25 Dezembro a 17 Janeiro")
     st.markdown("---")
 
     tabs = st.tabs(list(roteiro_data.keys()))
