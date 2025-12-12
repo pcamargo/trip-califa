@@ -131,7 +131,7 @@ roteiro_data = {
 # --- Função Principal para Renderização ---
 def main():
     st.title("🗺️ Califórnia")
-    st.markdown("### 🗓️ 25 Dezembro a 17 Janeiro")
+    st.markdown("#### 🗓️ 25 Dezembro a 17 Janeiro")
     st.markdown("---")
 
     tabs = st.tabs(list(roteiro_data.keys()))
