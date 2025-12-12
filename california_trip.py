@@ -84,17 +84,17 @@ roteiro_data = {
             ("🛍️", "**Compras no Outlet**", "Visite o outlet para compras de marcas famosas.")
         ]
     },
-    f"🌁 San Francisco & Bay Area ({DIAS_SF} Dias)": {
+    f"🌁 San Francisco ({DIAS_SF} Dias)": {
         "icon": "🌁",
         "dias": get_dates(SF_START, DIAS_SF),
         "cidade_api": "San Francisco",
         "destaques": [
-            ("🌉", "**Ponte Golden Gate**", "Atravesse a pé ou de bicicleta para vistas incríveis."),
-            ("🔑", "**Ilha de Alcatraz**", "Passeio de balsa para a antiga prisão. **Reserve com antecedência!**"),
-            ("🦁", "**Fisherman's Wharf & Pier 39**", "Veja os leões-marinhos e visite o Musée Mécanique."),
-            ("🚡", "**Passeio de Teleférico (Cable Car)**", "Forma clássica e divertida de conhecer a cidade."),
-            ("🔬", "**California Academy of Sciences**", "Planetário, aquário e floresta tropical em um só lugar."),
-            ("🚶", "**Explore os Bairros**", "Caminhe por Chinatown e Little Italy."),
+            ("🌉", "**Ponte Golden Gate**", "Atravessar a pé para vistas incríveis."),
+            ("🔑", "**Ilha de Alcatraz**", "Passeio de balsa para a antiga prisão."),
+            ("🦁", "**Fisherman's Wharf & Pier 39**", "Leões-marinhos e Musée Mécanique."),
+            ("🚡", "**Passeio de Teleférico (Cable Car)**", "Forma divertida de conhecer a cidade."),
+            ("🔬", "**California Academy of Sciences**", "Planetário, aquário e floresta tropical."),
+            ("🚶", "**Explore os Bairros**", "Caminhar por Chinatown e Little Italy."),
             ("🌲", "**Muir Woods & Sausalito**", "Excursão para ver as sequoias gigantes."),
         ]
     },
@@ -114,7 +114,7 @@ roteiro_data = {
         "dias": get_dates(ANAHEIM_START, DIAS_ANAHEIM_LA),
         "cidade_api": "Anaheim",
         "destaques": [
-            ("✨", "**Disneyland & California Adventure**", "Foco principal: Star Wars e Avengers Campus."),
+            ("✨", "**Disneyland & California Adventure**", "Foco: Star Wars e Avengers Campus."),
             ("🧙", "**Universal Studios Hollywood**", "Prioridade: Super Nintendo World e Harry Potter."),
             ("🍓", "**Knott's Berry Farm**", "Primeiro parque temático dos EUA."),
             ("🎢", "**Six Flags Magic Mountain**", "Ideal para amantes de montanhas-russas."),
@@ -130,8 +130,8 @@ roteiro_data = {
 
 # --- Função Principal para Renderização ---
 def main():
-    st.title("🗺️ Guia de Viagem: Califórnia")
-    st.markdown("### 🗓️ 25 Dezembro 2025 a 17 Janeiro 2026 - 24 Dias")
+    st.title("🗺️ Férias Califórnia")
+    st.markdown("### 🗓️ 25 Dezembro a 17 Janeiro - 24 Dias")
     st.markdown("---")
 
     tabs = st.tabs(list(roteiro_data.keys()))
@@ -157,7 +157,7 @@ def main():
             if "Highway 1" in cidade_key:
                 st.warning("⚠️ **Logística:** Verifique as condições das estradas no inverno.")
             if "Anaheim" in cidade_key:
-                st.info("💡 **Dica:** Com 10 dias, foque 4-5 dias nos parques e use o resto para explorar L.A.")
+                st.info("💡 **Dica:** Focar 4-5 dias nos parques e o resto para explorar L.A.")
 
 
 # --- Execução ---
